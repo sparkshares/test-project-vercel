@@ -14,7 +14,7 @@ export default function LoginForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://165.22.214.206/api/account/login/", {
+      const response = await axios.post("https://dl.surf/api/account/login/", {
         email,
         password,
       }, { withCredentials: true });
